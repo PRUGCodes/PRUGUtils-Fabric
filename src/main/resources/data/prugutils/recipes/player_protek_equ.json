@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " W ",
+      "WRW",
+      " W "
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:iron_ingot"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "hmorinutils:player_protek_equ",
+      "count": 16
+    }
+  }

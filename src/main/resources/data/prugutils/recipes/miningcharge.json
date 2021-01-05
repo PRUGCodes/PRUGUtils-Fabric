@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " C ",
+      "TPT",
+      " C "
+    ],
+    "key": {
+      "P": {
+        "item": "hmorinutils:player_protek_equ"
+      },
+      "T": {
+        "item": "minecraft:tnt"
+      },
+      "C": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    "result": {
+      "item": "hmorinutils:miningcharge",
+      "count": 1
+    }
+  }
