@@ -23,13 +23,11 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
     - name: make gradle wrapper executable
       run: chmod +x ./gradlew
-    - name: Build with Gradle
-      run: ./gradlew build
 
     # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
     # the publishing section of your build.gradle
-    - name: Publish to GitHub Packages
+    - name: Publish to Repsy
       env:
-        USERNAME: ${{ secrets.REPSYUSER }}
-        TOKEN: ${{ secrets.REPSYPASS }}
+        REPSYUSER: ${{ secrets.REPSYUSER }}
+        REPSYPASS: ${{ secrets.REPSYPASS }}
       run: ./gradlew build publish
