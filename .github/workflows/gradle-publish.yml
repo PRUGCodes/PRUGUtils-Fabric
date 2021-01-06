@@ -30,6 +30,6 @@ jobs:
     # the publishing section of your build.gradle
     - name: Publish to GitHub Packages
       env:
-        USERNAME: ${{ github.actor }}
-        TOKEN: ${{ secrets.HENRY_BUILD_KEY }}
+        USERNAME: ${{ secrets.REPSYUSER }}
+        TOKEN: ${{ secrets.REPSYPASS }}
       run: ./gradlew build publish
