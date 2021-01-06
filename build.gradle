@@ -78,7 +78,7 @@ publishing {
 	// To publish to maven local, no extra repositories are necessary. Just use the task `publishToMavenLocal`.
 	repositories {
         maven {
-            name = "GitHubPackages"
+            name = "prugutilsmaven"
             url = uri("https://maven.pkg.github.com/prugcodes/prugutilsmaven")
             credentials {
                 username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
