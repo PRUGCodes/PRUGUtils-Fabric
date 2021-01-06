@@ -11,12 +11,13 @@
     "TruuMoo"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/PRUGCodes/PRUGUtils-Fabric",
+    "sources": "https://github.com/PRUGCodes/PRUGUtils-Fabric",
+    "issues": "https://github.com/PRUGCodes/PRUGUtils-Fabric/issues"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/prugutils/icon.png",
 
   "environment": "*",
   "entrypoints": {
