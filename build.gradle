@@ -67,16 +67,15 @@ publishing {
 	// To publish to maven local, no extra repositories are necessary. Just use the task `publishToMavenLocal`.
 	repositories {
         maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/prugcodes/prugutils-fabric")
-            credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+            url "https://repo.repsy.io/mvn/hmorin/prugutils/"
+			credentials {
+                username System.getenv("REPSYUSER")
+                password System.getenv("REPSYPASS")
             }
         }
     }
     publications {
-        gpr(MavenPublication) {
+        MavenJava(MavenPublication) {
             artifact(remapJar) {
 				builtBy remapJar
 			}
