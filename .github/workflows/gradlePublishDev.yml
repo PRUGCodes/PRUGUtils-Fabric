@@ -5,7 +5,7 @@ name: Gradle Publish Dev
 
 on:
   release:
-    types: [released]
+    types: [prereleased]
 
 jobs:
   build:
