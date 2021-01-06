@@ -77,12 +77,8 @@ publishing {
     }
     publications {
         gpr(MavenPublication) {
-            artifact(remapJar) {
-				builtBy remapJar
-			}
-			artifact(sourcesJar) {
-				builtBy remapSourcesJar
-			}
+            artifactId='prug-utils'
+            from(components.java)
         }
     }
 }
