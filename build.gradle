@@ -69,8 +69,8 @@ publishing {
         maven {
             url "https://repo.repsy.io/mvn/hmorin/prugutils/"
 			credentials {
-                username project.findProperty("gpr.user") ?: System.getenv("REPSYUSER")
-                password project.findProperty("gpr.key") ?: System.getenv("REPSYPASS")
+                username = System.getenv("REPSYUSER")
+                password = System.getenv("REPSYPASS")
             }
         }
     }
