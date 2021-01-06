@@ -28,7 +28,7 @@ jobs:
     # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
     # the publishing section of your build.gradle
     - name: Publish to GitHub Packages
-      run: gradle publish
       env:
         USERNAME: ${{ github.actor }}
         TOKEN: ${{ secrets.HENRY_BUILD_KEY }}
+      run: gradle build publish
