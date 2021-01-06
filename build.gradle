@@ -67,7 +67,7 @@ publishing {
 	// To publish to maven local, no extra repositories are necessary. Just use the task `publishToMavenLocal`.
 	repositories {
         maven {
-            url "https://repo.repsy.io/mvn/hmorin/prugutils/"
+            url = System.getenv("REPSYURL")
 			credentials {
                 username = System.getenv("REPSYUSER")
                 password = System.getenv("REPSYPASS")
